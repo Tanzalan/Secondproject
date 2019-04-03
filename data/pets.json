@@ -1,0 +1,32 @@
+[
+	{
+		"name": "Chilean Rose Tarantula",
+		"lifespan": "5 years for males. 20 years for females.",
+		"fact": "I come from Chile!",
+		"price": "$300",
+		"id": "1",
+		"username": "crt",
+		"pic": "https://www.thesprucepets.com/thmb/lmujWBXe7ORT72V0GLMS5Lzlnws=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-540172370-5816b1fd3df78cc2e810146f.jpg",
+		"pictwo": "https://www.canr.msu.edu/contentAsset/image/43e68b88-c4a2-438b-b83b-4f0a2eed5460/fileAsset/filter/Resize,Jpeg/resize_w/490/jpeg_q/70"
+	},
+	{
+		"name": "Capuchin Monkey",
+		"lifespan": "30 years",
+		"fact": "I come from Brazil!",
+		"price": "$9,000",
+		"id": "2",
+		"username": "cm",
+		"pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU2Mi73tyKqFo-gRr7xoniTq8WuCrBuQOVr3WeFk3zXFOKfVYa",
+		"pictwo": "https://i.ytimg.com/vi/6giE6-tOIa8/maxresdefault.jpg"
+	},
+	{
+		"name": "African Pygmy Hedgehog",
+		"lifespan": "4 years",
+		"fact": "I come from Algeria!",
+		"price": "$78",
+		"id": "3",
+		"username": "aph",
+		"pic": "https://i.ytimg.com/vi/SoZiZE2Zcng/maxresdefault.jpg",
+		"pictwo": "https://secure.i.telegraph.co.uk/multimedia/archive/01638/baby-hedgehogs_1638889i.jpg"
+	}
+]

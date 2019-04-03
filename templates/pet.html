@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Your Cart{% endblock %}
+{% block content %}
+<h1>Will you adopt me?</h1>
+    <div class="row">
+        <div class="col-6">
+          <div class="card mt-3">
+            <img src= "{{ pet.pictwo }}" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Longevity: {{ pet.lifespan }}</h5>
+              <h5 class="card-title"> {{ pet.price }}</h5>
+<!---- Later on change show cart to add to cart ---->
+              <a href="{{url_for('add_to_cart', id = pet.id)}}" class="btn btn-primary btn-block"> {{ pet.name }} </a>
+            </div>
+          </div>
+        </div>
+
+
+{% endblock %}
+
+<!-- !!!!!!!!!!!!!!! -->

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Your Cart{% endblock %}
+{% block content %}
+<h1>Welcome to the Pet Shop!</h1>
+<body style="background-color: Coral;">
+<div class="row pb-5">
+    <div class="col-4">
+      <div class="card mt-3">
+        <div style="overflow: hidden; height: 15rem;">
+          <img src="https://secure.i.telegraph.co.uk/multimedia/archive/01638/baby-hedgehogs_1638889i.jpg">
+        </div>
+        <div class="card-body pet-card">
+          <h5 class="card-title pet-name">Our Pets</h5>
+          <a href="{{url_for('show_pets')}}" class="btn btn-primary">View</a>
+        </div>
+      </div>
+    </div>    <div class="col-4">
+      <div class="card mt-3">
+        <div style="overflow: hidden; height: 15rem;">
+          <img src="https://www.prank-monkey-jokes.com/image-files/576x576xmonkey-shopping-cart.gif.pagespeed.ic._5cXfjMpPe.png" class="card-img-top">
+        </div>
+
+        <div class="card-body pet-card">
+          <h5 class="card-title pet-name">Your Cart</h5>
+          <a href="{{url_for('show_cart')}}" class="btn btn-primary">View</a>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+
+{% endblock %}

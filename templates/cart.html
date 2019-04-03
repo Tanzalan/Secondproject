@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}Your Cart{% endblock %}
+{% block content %}
+<h1>Your Cart</h1>
+<div class="row">
+    <ul class="list-group cart">
+      {% for pet in cart %}
+      <li class="list-group-item cart-item">
+        <div class="pet-details">
+          <img src="{{ pet.pictwo }}">
+          <div class=" pet.name ">{{ pet.name }}</div>
+        </div>
+        <div>
+          <div class="{{ pet.price }}">{{ pet.price }}</div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+</div>
+<div class="row cart-total-row">
+  <div>Total: </div><div class="cart-total">{{total}}</div>
+</div>
+<div class="row cart-total-row buttons-row">
+  <a class="btn btn-secondary empty-button" href="{{url_for('empty_cart')}}">Empty</a>
+</div>
+{% endblock %}
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+<!-- cart = []
+
+cart.append ({"id:"1, "name":n"name"})
+
+cart = []
+
+pet = {"id":1}
+cart.append(name)
+
+nums =[]
+print(nums)
+[7]
+nums.append(9)
+[7, 9]
+
+url  is /cart_addpet/<id>/
+
+  1.) get the pet
+  2.) det the cart
+  3.) add pet to cart
+  4.) Save it to json (so you can go back and check)
+    A.) Then you redirect to /cart/
+  1.) Get cart from json
+-->
